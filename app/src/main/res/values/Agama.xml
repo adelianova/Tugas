@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Agama">
+        <item> Islam </item>
+        <item> Kristen </item>
+        <item> Katolik </item>
+        <item> Hindu </item>
+        <item> Budha </item>
+        <item> Lain-lain </item>
+    </string-array>
+</resources>

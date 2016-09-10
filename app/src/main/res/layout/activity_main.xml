@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -20,16 +24,15 @@
         <ImageView
             android:id="@+id/imageView"
             style="@style/TextAppearance.AppCompat.Display1"
-            android:layout_width="66dp"
-            android:layout_height="81dp"
+            android:layout_width="76dp"
+            android:layout_height="match_parent"
             android:padding="8dp"
             android:src="@drawable/ts" />
 
         <LinearLayout
             style="@style/Base.TextAppearance.AppCompat.Display1"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="0.27"
+            android:layout_height="80dp"
             android:orientation="vertical">
 
             <TextView
@@ -68,6 +71,7 @@
             android:id="@+id/textViewNama"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:inputType="text"
             android:text="Nama             : " />
 
         <EditText
@@ -77,4 +81,143 @@
             android:layout_weight="0.55" />
     </LinearLayout>
 
-</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.04"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewAsal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Asal Sekolah :" />
+
+            <EditText
+                android:id="@+id/editTextAsal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.55"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.04"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewJK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jenis Kelamin" />
+
+            <RadioGroup
+                android:id="@+id/RadioGroupJK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.55">
+
+                <RadioButton
+                    android:id="@+id/radioButtonPi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Perempuan" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonPa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Laki-laki" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.04"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="87dp"
+                android:layout_height="wrap_content"
+                android:text="Agama" />
+
+            <Spinner
+                android:id="@+id/spinnerAgama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/Agama" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.04"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewJurusan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.12"
+                android:text="Jurusan" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.55">
+
+                <CheckBox
+                    android:id="@+id/checkBoxRPL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="RPL " />
+
+                <CheckBox
+                    android:id="@+id/checkBoxTKJ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="TKJ" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxMM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Multimedia" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxAnimasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Animasi" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonDaftar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="DAFTAR" />
+
+        <TextView
+            android:id="@+id/textViewHasil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hasil" />
+
+    </LinearLayout>
+</ScrollView>
