@@ -73,12 +73,12 @@ public class MainActivity extends AppCompatActivity {
         } else {
             etAsal.setError(null);
         }
-        String jurusan = "Jurusan yang Anda pilih : ";
+        String jurusan = "Jurusan yang Anda pilih :\n ";
         int startlen = jurusan.length();
-        if (cbRPL.isChecked()) jurusan += cbRPL.getText() + ",";
-        if (cbTKJ.isChecked()) jurusan += cbTKJ.getText() + ",";
-        if (cbMM.isChecked()) jurusan += cbMM.getText() + ",";
-        if (cbAnimasi.isChecked()) jurusan += cbAnimasi.getText() + ",";
+        if (cbRPL.isChecked()) jurusan += cbRPL.getText() + "\n";
+        if (cbTKJ.isChecked()) jurusan += cbTKJ.getText() + "\n";
+        if (cbMM.isChecked()) jurusan += cbMM.getText() + "\n";
+        if (cbAnimasi.isChecked()) jurusan += cbAnimasi.getText() + "\n";
 
         if (jurusan.length() == startlen)
             jurusan = "Isi terlebih dahulu jurusan yang Anda inginkan";

@@ -24,15 +24,15 @@
         <ImageView
             android:id="@+id/imageView"
             style="@style/TextAppearance.AppCompat.Display1"
-            android:layout_width="76dp"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:padding="8dp"
             android:src="@drawable/ts" />
 
         <LinearLayout
             style="@style/Base.TextAppearance.AppCompat.Display1"
             android:layout_width="wrap_content"
-            android:layout_height="80dp"
+            android:layout_height="74dp"
             android:orientation="vertical">
 
             <TextView
@@ -50,6 +50,13 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="SMK TELKOM MALANG" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Tahun Ajaran 2017/2018" />
 
         </LinearLayout>
     </LinearLayout>
